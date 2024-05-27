@@ -8,6 +8,7 @@ import {
   Shows,
   Store,
 } from './pages';
+import { Footer } from './components';
 
 const router = createBrowserRouter([
   {
