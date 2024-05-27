@@ -2,7 +2,7 @@ import { SectionTitle } from '../components';
 
 const About = () => {
   return (
-    <section className="h-4/5 pt-32">
+    <section className="h-4/5 pt-8">
       <SectionTitle text="about us" />
       <div className="flex flex-wrap gap-2 sm:gap-x-6 items-center justify-center mt-12">
         <h1 className="text-4xl font-bold leading-none tracking-tight sm:text-6xl">

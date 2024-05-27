@@ -2,9 +2,9 @@ import { socialLinks } from '../data';
 
 const Footer = () => {
   return (
-    <footer className="footer fixed inset-x-0 bottom-0 footer-center p-10 bg-primary text-primary-content">
-      <aside>
-        <p className="font-bold">
+    <footer className="footer fixed inset-x-0 bottom-0 footer-center p-4 bg-primary text-primary-content">
+      <aside className="hidden pt-16">
+        <p className="font-bold ">
           Paradizo Films <br />
           Providing the best for the homies
         </p>

@@ -10,7 +10,7 @@ const carouselImages = [hero1, hero2, hero3, hero4, hero5];
 
 const Hero = () => {
   return (
-    <div className="grid lg:h-full justify-center lg:grid-cols-2 gap-24 items-center mt-4 pt-48 pb-8">
+    <div className="grid lg:h-full justify-center lg:grid-cols-2 gap-24 items-center mt-4 lg:pt-16 lg:pb-8 sm:pb-96 sm:pt-16">
       <div className="items-center text-center justify-center">
         <h1 className="max-w-2xl text-4xl text-center md:items-center font-bold tracking-tight sm:text-6xl">
           Welcome to Paradizo Films
@@ -36,24 +36,23 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="lg:hidden ">
-        <SectionTitle text="Swipe to see what we do:" />
-      </div>
-      <div className=" h-[20rem] carousel carousel-center p-4 space-x-4 bg-primary rounded-box pb24">
-        {carouselImages.map((image) => {
-          return (
-            <div
-              key={image}
-              className="carousel-item"
-            >
-              <img
-                src={image}
-                className="rounded-box h-full w-full object-cover"
-              ></img>
-            </div>
-          );
-        })}
-      </div>
+      <sections className="pb-16">
+        <div className=" h-[20rem] carousel carousel-center  space-x-4 bg-primary rounded-box ">
+          {carouselImages.map((image) => {
+            return (
+              <div
+                key={image}
+                className="carousel-item"
+              >
+                <img
+                  src={image}
+                  className="rounded-box h-full w-full object-cover"
+                ></img>
+              </div>
+            );
+          })}
+        </div>
+      </sections>
     </div>
   );
 };
