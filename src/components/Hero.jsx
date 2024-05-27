@@ -10,9 +10,9 @@ const carouselImages = [hero1, hero2, hero3, hero4, hero5];
 
 const Hero = () => {
   return (
-    <div className="grid lg:h-full lg:justify-center lg:grid-cols-2 gap-24 items-center mt-4 pt-36">
-      <div>
-        <h1 className="max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl">
+    <div className="grid lg:h-full justify-center lg:grid-cols-2 gap-24 items-center mt-4 pt-48 pb-8">
+      <div className="items-center text-center justify-center">
+        <h1 className="max-w-2xl text-4xl text-center md:items-center font-bold tracking-tight sm:text-6xl">
           Welcome to Paradizo Films
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-8">

@@ -1,11 +1,5 @@
-import {
-  FaSquareInstagram,
-  FaTiktok,
-  FaXTwitter,
-  FaPatreon,
-  FaSquareYoutube,
-  FaBars,
-} from 'react-icons/fa6';
+import { FaBars } from 'react-icons/fa6';
+import { socialLinks } from '../data';
 import NavLinks from './NavLinks';
 import { NavLink } from 'react-router-dom';
 
@@ -41,41 +35,19 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a
-            href="https://www.instagram.com/paradizofilms/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaSquareInstagram className="btn btn-ghost btn-circle btn-xs ml-4" />
-          </a>
-          <a
-            href="http://tiktok.com/paradizofilms"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaTiktok className="btn btn-ghost btn-circle btn-xs ml-4" />
-          </a>
-          <a
-            href="http://twitter.com/paradizofilms"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaXTwitter className="btn btn-ghost btn-circle btn-xs ml-4" />
-          </a>
-          <a
-            href="http://patreon.com/ParadizoFilms"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaPatreon className="btn btn-ghost btn-circle btn-xs ml-4" />
-          </a>
-          <a
-            href="https://www.youtube.com/@paradizofilms"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaSquareYoutube className="btn btn-ghost btn-circle btn-xs ml-4" />
-          </a>
+          {socialLinks.map((link) => {
+            const { id, href, rel, target, icon } = link;
+            return (
+              <a
+                key={id}
+                href={href}
+                rel={rel}
+                target={target}
+              >
+                {icon}
+              </a>
+            );
+          })}
         </div>
       </div>
     </nav>

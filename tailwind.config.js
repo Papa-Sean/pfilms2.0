@@ -7,5 +7,7 @@ export default {
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
     themes: ['nord'],
+    styled: true, // include daisyUI colors and design decisions for all components
+    utils: true, // adds responsive and modifier utility classes
   },
 };

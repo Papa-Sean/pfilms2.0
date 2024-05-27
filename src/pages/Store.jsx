@@ -3,8 +3,8 @@ import paradizoT from '../assets/paradizoT.png';
 
 const Store = () => {
   return (
-    <>
-      <div className="flex flex-wrap gap-2 sm:gap-x-6 items-center justify-center mt-12">
+    <sections className="lg:h-5/6 pb-8 mt-16">
+      <div className="flex flex-wrap gap-2 sm:gap-x-6 items-center justify-center mt-12 pt-16">
         <h1 className="text-4xl font-bold leading-none tracking-tight sm:text-6xl">
           Paradizo
         </h1>
@@ -34,7 +34,7 @@ const Store = () => {
           <h2 className="card-title tracking-wider">Buy now for $25</h2>
         </div>
       </a>
-    </>
+    </sections>
   );
 };
 

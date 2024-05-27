@@ -126,7 +126,7 @@ const pboiz = [
 
 const Shows = () => {
   return (
-    <>
+    <section className="h-full pb-64">
       <SectionTitle text="Popular Paradizo Videos" />
       <div className="pt-12 grid gap-4 md:gird-cols-2 lg:grid-cols-4 pb-12">
         {popularVideos.map((video) => {
@@ -154,7 +154,7 @@ const Shows = () => {
         })}
       </div>
       <SectionTitle text="We Wrote An Episode" />
-      <div className="pt-12 grid gap-4 md:gird-cols-2 lg:grid-cols-4">
+      <div className="pt-12 grid gap-4 md:gird-cols-2 lg:grid-cols-4 pb-12">
         {wae.map((video) => {
           const { id, url, title, src } = video;
           return (
@@ -180,7 +180,7 @@ const Shows = () => {
         })}
       </div>
       <SectionTitle text="Paradizo News" />
-      <div className="pt-12 grid gap-4 md:gird-cols-2 lg:grid-cols-4">
+      <div className="pt-12 grid gap-4 md:gird-cols-2 lg:grid-cols-4 pb-12">
         {news.map((video) => {
           const { id, url, title, src } = video;
           return (
@@ -206,7 +206,7 @@ const Shows = () => {
         })}
       </div>
       <SectionTitle text="The P Boiz Podcast" />
-      <div className="pt-12 grid gap-4 md:gird-cols-2 lg:grid-cols-4">
+      <div className="pt-12 grid gap-4 md:gird-cols-2 lg:grid-cols-4 pb-12">
         {pboiz.map((video) => {
           const { id, url, title, src } = video;
           return (
@@ -231,7 +231,7 @@ const Shows = () => {
           );
         })}
       </div>
-    </>
+    </section>
   );
 };
 
