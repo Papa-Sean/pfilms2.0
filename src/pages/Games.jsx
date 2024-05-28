@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { SectionTitle } from '../components';
+import { SectionTitle, WriteSitcom } from '../components';
 
 const showList = [
   {
@@ -26,7 +26,6 @@ const showList = [
       'https://upload.wikimedia.org/wikipedia/commons/f/f9/Curb_Your_Enthusiasm.png',
   },
 ];
-const plots = ['Plot1', 'Plot2', 'Plot3', 'Plot4', 'Plot5', 'Plot6'];
 
 const Games = () => {
   const [selectedShow, setSelectedShow] = useState('');
@@ -38,6 +37,7 @@ const Games = () => {
     return (
       <>
         <SectionTitle text={`Your ${selectedShow} Episode!`} />
+        <WriteSitcom selectedShow={selectedShow} />
       </>
     );
   }
