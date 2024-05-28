@@ -36,7 +36,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <sections className="pb-16">
+      <section className="pb-16">
         <div className=" h-[20rem] carousel carousel-center  space-x-4 bg-primary rounded-box ">
           {carouselImages.map((image) => {
             return (
@@ -52,7 +52,7 @@ const Hero = () => {
             );
           })}
         </div>
-      </sections>
+      </section>
     </div>
   );
 };

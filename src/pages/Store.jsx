@@ -3,7 +3,7 @@ import paradizoT from '../assets/paradizoT.png';
 
 const Store = () => {
   return (
-    <sections className="h-full pb-72 pt-8">
+    <section className="h-full pb-72 pt-8">
       <div className="flex flex-wrap gap-2 sm:gap-x-6 items-center justify-center mt-12 pt-4">
         <h1 className="text-4xl font-bold leading-none tracking-tight sm:text-6xl">
           Paradizo
@@ -36,7 +36,7 @@ const Store = () => {
           </div>
         </a>
       </section>
-    </sections>
+    </section>
   );
 };
 
