@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { SectionTitle, WriteSitcom } from '../components';
 
 const showList = [
@@ -29,9 +29,6 @@ const showList = [
 
 const Games = () => {
   const [selectedShow, setSelectedShow] = useState('');
-  const [plot1, setPlot1] = useState('');
-  const [plot2, setPlot2] = useState('');
-  const [plot3, setPlot3] = useState('');
 
   if (selectedShow !== '') {
     return (
