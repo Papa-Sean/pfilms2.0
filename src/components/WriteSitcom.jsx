@@ -9,7 +9,7 @@ const aPlotsList = [
 ];
 const bPlotsList = [
   'Ex calls',
-  'A friend form college comes to town',
+  'A friend from college comes to town',
   'Going to the beach',
 ];
 const cPlotsList = [
